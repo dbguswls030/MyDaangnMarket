@@ -6,11 +6,14 @@
 //
 
 import UIKit
-
+import FirebaseDatabase
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var topBar: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
+
+    let db = Database.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.dataSource = self
