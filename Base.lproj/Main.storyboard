@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="ynd-Wc-WH6">
             <objects>
-                <tabBarController id="7Hq-CL-bsv" customClass="ViewController" customModule="MyDaangnMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainStoryboard" id="7Hq-CL-bsv" customClass="ViewController" customModule="MyDaangnMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D5T-uF-gpP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoginStoryboard" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="MyDaangnMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0du-SK-OKF">
+                                <rect key="frame" x="30" y="84" width="121" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="휴대폰 번호로 로그인해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0F-2i-a6a">
+                                <rect key="frame" x="30" y="125.5" width="310.5" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="휴대폰 번호는 안전하게 보관되며 이웃들에게 공개되지 않아요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmg-2W-9LI">
+                                <rect key="frame" x="30" y="172.5" width="318" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="휴대폰 번호(- 없이 숫자만 입력)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ouG-QV-b0E">
+                                <rect key="frame" x="30" y="213.5" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ogz-Gy-IeR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvD-1g-fuV">
+                                <rect key="frame" x="30" y="283.5" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="B8f-ec-8b4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="인증문자 받기">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="getAuthMessageButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="N1U-rI-Tr3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="인증번호 입력" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="MD0-Yd-gKG">
+                                <rect key="frame" x="30" y="353.5" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="muP-DI-pV4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ano-oy-2oX">
+                                <rect key="frame" x="30" y="428.5" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QzN-RY-TAT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="인증번호 확인">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="EnP-pJ-nAI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ano-oy-2oX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="0tg-Tm-1JX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0du-SK-OKF" secondAttribute="trailing" constant="20" id="12A-pX-kH3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MvD-1g-fuV" secondAttribute="trailing" constant="30" id="B6H-da-o1c"/>
+                            <constraint firstItem="Ano-oy-2oX" firstAttribute="top" secondItem="MD0-Yd-gKG" secondAttribute="bottom" constant="25" id="GMg-Dm-Xd8"/>
+                            <constraint firstItem="j0F-2i-a6a" firstAttribute="top" secondItem="0du-SK-OKF" secondAttribute="bottom" constant="10" id="H5k-RB-tPH"/>
+                            <constraint firstItem="MD0-Yd-gKG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="IL8-KR-1VK"/>
+                            <constraint firstItem="gmg-2W-9LI" firstAttribute="top" secondItem="j0F-2i-a6a" secondAttribute="bottom" constant="15" id="L4c-uF-dbO"/>
+                            <constraint firstItem="MD0-Yd-gKG" firstAttribute="top" secondItem="MvD-1g-fuV" secondAttribute="bottom" constant="20" id="MNY-N3-JF7"/>
+                            <constraint firstItem="ouG-QV-b0E" firstAttribute="top" secondItem="gmg-2W-9LI" secondAttribute="bottom" constant="25" id="NhG-Pq-r0E"/>
+                            <constraint firstItem="MvD-1g-fuV" firstAttribute="top" secondItem="ouG-QV-b0E" secondAttribute="bottom" constant="20" id="PgX-iP-2lB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MD0-Yd-gKG" secondAttribute="trailing" constant="30" id="Pv0-YL-95C"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gmg-2W-9LI" secondAttribute="trailing" constant="10" id="WJz-jS-ZuW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="j0F-2i-a6a" secondAttribute="trailing" constant="40" id="Xlo-ga-o9M"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ouG-QV-b0E" secondAttribute="trailing" constant="30" id="baG-J8-dah"/>
+                            <constraint firstItem="MvD-1g-fuV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="d90-EF-Ylb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ano-oy-2oX" secondAttribute="trailing" constant="30" id="ds4-kd-Mr3"/>
+                            <constraint firstItem="ouG-QV-b0E" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="hff-aa-zdQ"/>
+                            <constraint firstItem="0du-SK-OKF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="hnF-pG-3Xk"/>
+                            <constraint firstItem="0du-SK-OKF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="jmW-5w-eyZ"/>
+                            <constraint firstItem="j0F-2i-a6a" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="lH6-MZ-mHV"/>
+                            <constraint firstItem="gmg-2W-9LI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="na0-iS-FxR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="Ano-oy-2oX" id="bWO-sR-oo6"/>
+                        <outlet property="getAuthMessageButton" destination="MvD-1g-fuV" id="eyn-r6-c4c"/>
+                        <outlet property="inputAuthNumberTextField" destination="MD0-Yd-gKG" id="jER-ig-jy2"/>
+                        <outlet property="phoneNumberTextField" destination="ouG-QV-b0E" id="tKR-oC-P5t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var topBar: UIView!
@@ -22,6 +23,16 @@ class HomeViewController: UIViewController {
         registerCellNib()
         registerTopBarNib()
     }
+    
+    @IBAction func upLoadItemButton(_ sender: Any) {
+//        let firebaseAuth = Auth.auth()
+//        do {
+//            try firebaseAuth.signOut()
+//        } catch let signOutError as NSError {
+//            print("Error signing out: %@", signOutError)
+//        }
+    }
+    
     func registerTopBarNib(){
         guard let topBarNib = Bundle.main.loadNibNamed("TopBar", owner: self, options: nil)?.first as? TopBarView else{
             return

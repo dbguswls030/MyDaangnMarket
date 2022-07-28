@@ -56,6 +56,9 @@
                                 <state key="normal" image="plus" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="light"/>
                                 </state>
+                                <connections>
+                                    <action selector="upLoadItemButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NHK-Hr-n3M"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

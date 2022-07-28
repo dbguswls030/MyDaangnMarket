@@ -6,17 +6,49 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var isLogged: Bool = false
+    
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        if let user = Auth.auth().currentUser{
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            guard let mainVC = storyboard.instantiateViewController(withIdentifier: "MainStoryboard") as? LoginViewController else{
+                return
+            }
+            self.window?.rootViewController = mainVC
+            
+        }else{
+            let storyboard = UIStoryboard(name: "Login", bundle: nil)
+            guard let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginStoryboard") as? LoginViewController else{
+                return
+            }
+            self.window?.rootViewController = loginVC
+        }
+//        if isLogged == false{
+//            let storyboard = UIStoryboard(name: "Login", bundle: nil)
+//            guard let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginStoryboard") as? LoginViewController else{
+//                return
+//            }
+//            self.window?.rootViewController = loginVC
+//        }else{
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            guard let mainVC = storyboard.instantiateViewController(withIdentifier: "MainStoryboard") as? LoginViewController else{
+//                return
+//            }
+//            self.window?.rootViewController = mainVC
+//        }
+        
+        
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
