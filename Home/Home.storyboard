@@ -80,6 +80,7 @@
                     <connections>
                         <outlet property="collectionView" destination="Z4J-X2-1qy" id="N6N-nt-Jgg"/>
                         <outlet property="topBar" destination="teh-dg-3cP" id="dMj-96-dYG"/>
+                        <outlet property="uploadItemButton" destination="B45-RS-IBz" id="YLY-yY-la2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

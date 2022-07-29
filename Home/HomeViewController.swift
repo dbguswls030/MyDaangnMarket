@@ -10,6 +10,7 @@ import FirebaseDatabase
 import FirebaseAuth
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var uploadItemButton: UIButton!
     @IBOutlet weak var topBar: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -22,8 +23,11 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         registerCellNib()
         registerTopBarNib()
+        inituploadItemButtonStyle()
     }
-    
+    func inituploadItemButtonStyle(){
+        self.uploadItemButton.layer.cornerRadius = self.uploadItemButton.bounds.width/2
+    }
     @IBAction func upLoadItemButton(_ sender: Any) {
 //        let firebaseAuth = Auth.auth()
 //        do {
@@ -31,6 +35,10 @@ class HomeViewController: UIViewController {
 //        } catch let signOutError as NSError {
 //            print("Error signing out: %@", signOutError)
 //        }
+        let vc = UIStoryboard(name: "UploadItem", bundle: nil).instantiateViewController(withIdentifier: "UploadItemStoryboard")
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+        
     }
     
     func registerTopBarNib(){

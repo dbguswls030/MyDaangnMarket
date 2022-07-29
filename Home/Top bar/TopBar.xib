@@ -50,16 +50,26 @@
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                     </state>
                 </button>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEV-vJ-eNH">
+                    <rect key="frame" x="0.0" y="49" width="414" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="pE6-2t-1g6"/>
+                    </constraints>
+                </view>
             </subviews>
             <constraints>
                 <constraint firstItem="dbd-gO-Yfz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="05t-Gf-nrG"/>
                 <constraint firstItem="1WW-Xj-QBu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0G8-Cm-DRH"/>
+                <constraint firstAttribute="bottom" secondItem="TEV-vJ-eNH" secondAttribute="bottom" id="5mR-ay-Njc"/>
                 <constraint firstAttribute="trailing" secondItem="dbd-gO-Yfz" secondAttribute="trailing" constant="10" id="Bht-BX-avy"/>
                 <constraint firstItem="7E1-mq-noG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="P8x-u6-Nsv"/>
                 <constraint firstItem="7E1-mq-noG" firstAttribute="leading" secondItem="1WW-Xj-QBu" secondAttribute="trailing" constant="15" id="Ufd-tV-vpo"/>
+                <constraint firstItem="TEV-vJ-eNH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bCR-JR-rp8"/>
                 <constraint firstItem="bu4-X2-Aog" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="e2M-Mw-4Ej"/>
                 <constraint firstItem="dbd-gO-Yfz" firstAttribute="leading" secondItem="7E1-mq-noG" secondAttribute="trailing" constant="15" id="gCg-aQ-i7i"/>
                 <constraint firstItem="bu4-X2-Aog" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nWY-fB-2Ce"/>
+                <constraint firstAttribute="trailing" secondItem="TEV-vJ-eNH" secondAttribute="trailing" id="v81-TS-2w9"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-110" y="53"/>
