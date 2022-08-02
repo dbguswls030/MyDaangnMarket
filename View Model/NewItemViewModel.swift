@@ -32,7 +32,7 @@ class NewItemViewModel{
     }
     var selectedImage: [UIImage]
     
-    var numOfSection: Int{
+    var selectedImageNumOfSection: Int{
         get{
             return selectedImage.count
         }

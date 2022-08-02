@@ -89,14 +89,29 @@
                                                     <constraint firstAttribute="height" constant="1" id="7TV-Ub-JfJ"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UP0-XO-s3K">
-                                                <rect key="frame" x="20" y="205" width="109" height="36"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UP0-XO-s3K">
+                                                <rect key="frame" x="20" y="205" width="374" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="카테고리 선택">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="sSs-lA-qS7"/>
+                                                </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카테고리 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spf-w5-DkA">
+                                                <rect key="frame" x="20" y="211" width="108.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxY-aW-dbx">
+                                                <rect key="frame" x="381.5" y="211" width="12.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gp5-lR-TOU">
                                                 <rect key="frame" x="20" y="261" width="374" height="1"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -134,22 +149,26 @@
                                         <constraints>
                                             <constraint firstItem="gp5-lR-TOU" firstAttribute="top" secondItem="UP0-XO-s3K" secondAttribute="bottom" constant="20" id="4Dq-38-HcE"/>
                                             <constraint firstAttribute="trailing" secondItem="gp5-lR-TOU" secondAttribute="trailing" constant="20" id="6zD-ZJ-mEF"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UP0-XO-s3K" secondAttribute="trailing" constant="20" id="80m-7P-mR2"/>
+                                            <constraint firstAttribute="trailing" secondItem="UP0-XO-s3K" secondAttribute="trailing" constant="20" id="80m-7P-mR2"/>
                                             <constraint firstItem="JQh-3K-28X" firstAttribute="leading" secondItem="eOA-9s-SoO" secondAttribute="leading" constant="20" id="A2C-de-BXF"/>
                                             <constraint firstItem="gp5-lR-TOU" firstAttribute="leading" secondItem="eOA-9s-SoO" secondAttribute="leading" constant="20" id="BIM-cv-XIe"/>
                                             <constraint firstItem="TdP-Ez-C33" firstAttribute="leading" secondItem="QVO-wP-Z7h" secondAttribute="trailing" constant="5" id="BWg-tO-Sad"/>
+                                            <constraint firstItem="spf-w5-DkA" firstAttribute="leading" secondItem="eOA-9s-SoO" secondAttribute="leading" constant="20" id="CBW-7S-AQE"/>
                                             <constraint firstItem="UP0-XO-s3K" firstAttribute="top" secondItem="Xe2-Uz-EJq" secondAttribute="bottom" constant="20" id="GLs-WS-bU1"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PBC-Oj-ZaC" secondAttribute="trailing" constant="20" id="LB9-YZ-PPL"/>
                                             <constraint firstItem="KhK-an-gFe" firstAttribute="top" secondItem="eOA-9s-SoO" secondAttribute="top" id="MFd-BO-JSo"/>
                                             <constraint firstItem="JYk-nS-aCw" firstAttribute="top" secondItem="3Lu-b7-PyV" secondAttribute="bottom" constant="20" id="Mh4-Ei-OOP"/>
+                                            <constraint firstAttribute="trailing" secondItem="VxY-aW-dbx" secondAttribute="trailing" constant="20" id="NST-bO-2RV"/>
                                             <constraint firstAttribute="bottom" secondItem="JYk-nS-aCw" secondAttribute="bottom" constant="20" id="ORb-go-8Ik"/>
                                             <constraint firstAttribute="trailing" secondItem="JYk-nS-aCw" secondAttribute="trailing" constant="20" id="PTc-ep-UbX"/>
                                             <constraint firstItem="Xe2-Uz-EJq" firstAttribute="leading" secondItem="eOA-9s-SoO" secondAttribute="leading" constant="20" id="SMw-0X-qOY"/>
                                             <constraint firstItem="3Lu-b7-PyV" firstAttribute="leading" secondItem="eOA-9s-SoO" secondAttribute="leading" constant="20" id="WMA-kr-gaK"/>
+                                            <constraint firstItem="spf-w5-DkA" firstAttribute="centerY" secondItem="UP0-XO-s3K" secondAttribute="centerY" id="XHz-eh-UQx"/>
                                             <constraint firstItem="3Lu-b7-PyV" firstAttribute="top" secondItem="TdP-Ez-C33" secondAttribute="bottom" constant="20" id="XzQ-zq-sPb"/>
                                             <constraint firstItem="JQh-3K-28X" firstAttribute="top" secondItem="KhK-an-gFe" secondAttribute="bottom" id="Y1V-PP-Ho2"/>
                                             <constraint firstAttribute="trailing" secondItem="Xe2-Uz-EJq" secondAttribute="trailing" constant="20" id="YAv-Gc-0ol"/>
                                             <constraint firstItem="UP0-XO-s3K" firstAttribute="leading" secondItem="eOA-9s-SoO" secondAttribute="leading" constant="20" id="Zu5-eM-L6O"/>
+                                            <constraint firstItem="VxY-aW-dbx" firstAttribute="centerY" secondItem="UP0-XO-s3K" secondAttribute="centerY" id="bJg-Nf-tBh"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TdP-Ez-C33" secondAttribute="trailing" constant="20" id="byh-yB-9Sq"/>
                                             <constraint firstItem="TdP-Ez-C33" firstAttribute="top" secondItem="gp5-lR-TOU" secondAttribute="bottom" constant="20" id="dT3-WZ-Sw8"/>
                                             <constraint firstAttribute="height" constant="774" id="fEH-XH-COa"/>
@@ -192,7 +211,11 @@
                     </view>
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
+                        <outlet property="categoryTitle" destination="spf-w5-DkA" id="O5J-y3-6dx"/>
                         <outlet property="collectionView" destination="KhK-an-gFe" id="0vf-6J-LXx"/>
+                        <outlet property="contentTextView" destination="JYk-nS-aCw" id="Pf1-F3-n1M"/>
+                        <outlet property="priceTextField" destination="TdP-Ez-C33" id="wYG-7u-mVi"/>
+                        <outlet property="wonLabel" destination="QVO-wP-Z7h" id="pX4-24-C1O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
